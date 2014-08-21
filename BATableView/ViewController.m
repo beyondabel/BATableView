@@ -27,6 +27,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.title = @"BATableView demo";
     }
     return self;
 }
@@ -45,13 +46,26 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [self.contactTableView hideFlotage];
+}
+
 #pragma mark - UITableViewDataSource
 - (NSArray *) sectionIndexTitlesForABELTableView:(BATableView *)tableView {
-    NSMutableArray * indexTitles = [NSMutableArray array];
-    for (NSDictionary * sectionDictionary in self.dataSource) {
-        [indexTitles addObject:sectionDictionary[@"indexTitle"]];
-    }
-    return indexTitles;
+    return @[
+             @"A",@"B",@"C",@"D",@"E",
+             @"F",@"G",@"H",@"I",@"J",
+             @"K",@"L",@"M",@"N",@"O",
+             @"P",@"Q",@"R",@"S",@"T",
+             @"U",@"V",@"W",@"X",@"Y",
+             @"Z"
+             ];
+}
+
+- (NSString *)titleString:(NSInteger)section
+{
+    return self.dataSource[section][@"indexTitle"];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section

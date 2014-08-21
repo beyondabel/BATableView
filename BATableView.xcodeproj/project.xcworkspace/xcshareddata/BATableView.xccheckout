@@ -10,29 +10,29 @@
 	<string>BATableView</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>42DCA82B-FC4D-4805-97E4-6B703B2C5DC6</key>
+		<key>393DDC3A9546D0AC890F3B6C83863FA0ECDDD28C</key>
 		<string>https://github.com/beyondabel/BATableView.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>BATableView.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>42DCA82B-FC4D-4805-97E4-6B703B2C5DC6</key>
+		<key>393DDC3A9546D0AC890F3B6C83863FA0ECDDD28C</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/beyondabel/BATableView.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>42DCA82B-FC4D-4805-97E4-6B703B2C5DC6</string>
+	<string>393DDC3A9546D0AC890F3B6C83863FA0ECDDD28C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>42DCA82B-FC4D-4805-97E4-6B703B2C5DC6</string>
+			<string>393DDC3A9546D0AC890F3B6C83863FA0ECDDD28C</string>
 			<key>IDESourceControlWCCName</key>
 			<string>BATableView</string>
 		</dict>

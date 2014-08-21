@@ -8,11 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+#define RGB(r,g,b,a)  [UIColor colorWithRed:(double)r/255.0f green:(double)g/255.0f blue:(double)b/255.0f alpha:a]
+
 @protocol BATableViewIndexDelegate;
 
 @interface BATableViewIndex : UIView
 @property (nonatomic, strong) NSArray *indexes;
 @property (nonatomic, weak) id <BATableViewIndexDelegate> tableViewIndexDelegate;
+
+- (void)reloadLayout:(UIEdgeInsets)edgeInsets;
 @end
 
 @protocol BATableViewIndexDelegate <NSObject>

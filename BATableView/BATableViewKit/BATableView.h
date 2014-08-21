@@ -12,11 +12,12 @@
 @property (nonatomic, strong) UITableView * tableView;
 @property (nonatomic, strong) id<BATableViewDelegate> delegate;
 - (void)reloadData;
+- (void)hideFlotage;
 @end
 
 @protocol BATableViewDelegate <UITableViewDataSource,UITableViewDelegate>
 
 - (NSArray *)sectionIndexTitlesForABELTableView:(BATableView *)tableView;
-
+- (NSString *)titleString:(NSInteger)section;
 
 @end
