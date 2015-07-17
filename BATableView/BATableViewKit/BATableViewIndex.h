@@ -17,6 +17,7 @@
 @property (nonatomic, weak) id <BATableViewIndexDelegate> tableViewIndexDelegate;
 
 - (void)reloadLayout:(UIEdgeInsets)edgeInsets;
+
 @end
 
 @protocol BATableViewIndexDelegate <NSObject>
