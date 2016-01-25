@@ -57,7 +57,9 @@
     _tableViewIndexDelegate = tableViewIndexDelegate;
     self.letters = [self.tableViewIndexDelegate tableViewIndexTitle:self];
     isLayedOut = NO;
-    [self layoutSubviews];
+    
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
 }
 
 - (void)layoutSubviews{
@@ -90,15 +92,14 @@
     }
 }
 
-- (void)reloadLayout:(UIEdgeInsets)edgeInsets
-{
+- (void)reloadLayout:(UIEdgeInsets)edgeInsets {
     CGRect rect = self.frame;
     rect.size.height = self.indexes.count * self.letterHeight;
     rect.origin.y = edgeInsets.top + ([self superview].bounds.size.height - edgeInsets.top - edgeInsets.bottom - rect.size.height) / 2;
     self.frame = rect;
 }
 
-- (CATextLayer*)textLayerWithSize:(CGFloat)size string:(NSString*)string andFrame:(CGRect)frame{
+- (CATextLayer*)textLayerWithSize:(CGFloat)size string:(NSString*)string andFrame:(CGRect)frame {
     CATextLayer *textLayer = [CATextLayer layer];
     [textLayer setFont:@"ArialMT"];
     [textLayer setFontSize:size];
@@ -110,19 +111,22 @@
     return textLayer;
 }
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
     [self sendEventToDelegate:event];
     [self.tableViewIndexDelegate tableViewIndexTouchesBegan:self];
 }
 
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesMoved:touches withEvent:event];
     [self sendEventToDelegate:event];
 }
 
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.tableViewIndexDelegate tableViewIndexTouchesEnd:self];
+}
+
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.tableViewIndexDelegate tableViewIndexTouchesEnd:self];
 }
 
