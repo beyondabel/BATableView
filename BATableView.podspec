@@ -9,13 +9,17 @@
 Pod::Spec.new do |spec|
   spec.name             = 'BATableView'
   spec.version          = '1.0.0'
-  spec.license          = { :type => 'MIT' }
+  spec.license          =  { :type => 'MIT', :file => 'LICENSE' }
   spec.homepage         = 'https://github.com/beyondabel/BATableView'
-  spec.authors          = { 'beyondabel' => 'beyondabel@gmail.com' }
-  spec.summary          = ''
+  spec.author          = { 'beyondabel' => 'beyondabel@gmail.com' }
+  spec.summary          = 'BATableView is add index TableView'
   spec.source           = { :git => 'https://github.com/beyondabel/BATableView.git', :tag => 'v1.0.0' }
-  spec.source_files     = 'BATableView/*'
+  spec.source_files     = 'BATableView/**/*.{m,h}'
   spec.framework        = 'SystemConfiguration'
+  spec.platform     = :ios, "7.0"
+  spec.ios.deployment_target = "7.0"
   spec.requires_arc     = true
+
+
 end
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B578E1F41CAAB96800A81747 /* BATableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B578E1F11CAAB96800A81747 /* BATableView.m */; };
+		B578E1F51CAAB96800A81747 /* BATableViewIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = B578E1F31CAAB96800A81747 /* BATableViewIndex.m */; };
 		B5B7494C1919D3D700640C8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B7494B1919D3D700640C8E /* Foundation.framework */; };
 		B5B7494E1919D3D700640C8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B7494D1919D3D700640C8E /* CoreGraphics.framework */; };
 		B5B749501919D3D700640C8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B7494F1919D3D700640C8E /* UIKit.framework */; };
@@ -17,8 +19,6 @@
 		B5B749651919D3D700640C8E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B749641919D3D700640C8E /* XCTest.framework */; };
 		B5B749661919D3D700640C8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B7494B1919D3D700640C8E /* Foundation.framework */; };
 		B5B749671919D3D700640C8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B7494F1919D3D700640C8E /* UIKit.framework */; };
-		B5B7497F1919D43800640C8E /* BATableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B7497C1919D43800640C8E /* BATableView.m */; };
-		B5B749801919D43800640C8E /* BATableViewIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B7497E1919D43800640C8E /* BATableViewIndex.m */; };
 		B5B749831919D4FE00640C8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B749821919D4FE00640C8E /* ViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B578E1F01CAAB96800A81747 /* BATableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BATableView.h; sourceTree = "<group>"; };
+		B578E1F11CAAB96800A81747 /* BATableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATableView.m; sourceTree = "<group>"; };
+		B578E1F21CAAB96800A81747 /* BATableViewIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BATableViewIndex.h; sourceTree = "<group>"; };
+		B578E1F31CAAB96800A81747 /* BATableViewIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATableViewIndex.m; sourceTree = "<group>"; };
 		B5B749481919D3D700640C8E /* BATableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BATableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B7494B1919D3D700640C8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B5B7494D1919D3D700640C8E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -46,10 +50,6 @@
 		B5B7495D1919D3D700640C8E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B5B749631919D3D700640C8E /* BATableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BATableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B749641919D3D700640C8E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B5B7497B1919D43800640C8E /* BATableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BATableView.h; sourceTree = "<group>"; };
-		B5B7497C1919D43800640C8E /* BATableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATableView.m; sourceTree = "<group>"; };
-		B5B7497D1919D43800640C8E /* BATableViewIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BATableViewIndex.h; sourceTree = "<group>"; };
-		B5B7497E1919D43800640C8E /* BATableViewIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BATableViewIndex.m; sourceTree = "<group>"; };
 		B5B749811919D4FE00640C8E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B5B749821919D4FE00640C8E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +78,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B578E1EF1CAAB96800A81747 /* BATableView */ = {
+			isa = PBXGroup;
+			children = (
+				B578E1F01CAAB96800A81747 /* BATableView.h */,
+				B578E1F11CAAB96800A81747 /* BATableView.m */,
+				B578E1F21CAAB96800A81747 /* BATableViewIndex.h */,
+				B578E1F31CAAB96800A81747 /* BATableViewIndex.m */,
+			);
+			path = BATableView;
+			sourceTree = "<group>";
+		};
 		B5B7493F1919D3D700640C8E = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +121,7 @@
 		B5B749511919D3D700640C8E /* BATableView */ = {
 			isa = PBXGroup;
 			children = (
-				B5B7497A1919D43800640C8E /* BATableViewKit */,
+				B578E1EF1CAAB96800A81747 /* BATableView */,
 				B5B7495A1919D3D700640C8E /* AppDelegate.h */,
 				B5B7495B1919D3D700640C8E /* AppDelegate.m */,
 				B5B7495D1919D3D700640C8E /* Images.xcassets */,
@@ -130,17 +141,6 @@
 				B5B749591919D3D700640C8E /* BATableView-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B5B7497A1919D43800640C8E /* BATableViewKit */ = {
-			isa = PBXGroup;
-			children = (
-				B5B7497B1919D43800640C8E /* BATableView.h */,
-				B5B7497C1919D43800640C8E /* BATableView.m */,
-				B5B7497D1919D43800640C8E /* BATableViewIndex.h */,
-				B5B7497E1919D43800640C8E /* BATableViewIndex.m */,
-			);
-			path = BATableViewKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,10 +241,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5B7495C1919D3D700640C8E /* AppDelegate.m in Sources */,
-				B5B7497F1919D43800640C8E /* BATableView.m in Sources */,
 				B5B749581919D3D700640C8E /* main.m in Sources */,
-				B5B749801919D43800640C8E /* BATableViewIndex.m in Sources */,
+				B578E1F41CAAB96800A81747 /* BATableView.m in Sources */,
 				B5B749831919D4FE00640C8E /* ViewController.m in Sources */,
+				B578E1F51CAAB96800A81747 /* BATableViewIndex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

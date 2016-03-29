@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "BATableViewKit/BATableView.h"
+#import "BATableView/BATableView.h"
 
 @interface ViewController ()<BATableViewDelegate>
 
