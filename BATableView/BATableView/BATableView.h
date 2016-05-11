@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 @protocol BATableViewDelegate;
+
 @interface BATableView : UIView
+
 @property (nonatomic, strong) UITableView * tableView;
-@property (nonatomic, strong) id<BATableViewDelegate> delegate;
+@property (nonatomic, weak) id<BATableViewDelegate> delegate;
 - (void)reloadData;
 - (void)hideFlotage;
+
 @end
 
 @protocol BATableViewDelegate <UITableViewDataSource,UITableViewDelegate>
